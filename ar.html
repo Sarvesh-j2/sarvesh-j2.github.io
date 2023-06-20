@@ -20,34 +20,20 @@
       border-radius: 20px;
       padding: 10px 20px;
     }
-    #vr-button {
-      position: fixed;
-      bottom: 90px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: #a5c7d4;
-      color: white;
-      border: none;
-      border-radius: 20px;
-      padding: 10px 20px;
-    }
+    
   </style>
 </head>
 <body>
   <button onclick="goToHomePage()">Back to Homepage</button>
   <p>You can view this model in AR enabled devices (example: 📱) </p>
   <model-viewer src="resources/Model/Brain_withtextures.gltf" alt="AR Model" 
-  ar ar-modes="webxr,scene-viewer" ar-scale="fixed" camera-controls touch-action="pan-y" xr-environment>
+  ar ar-scale="fixed" camera-controls touch-action="pan-y" xr-environment>
   <button slot="ar-button" id="ar-button" >
     👋 Activate AR
 </button>
-    <button id="vr-button">VR Mode
-  👋 Activate VR
-    </button>
 <div id="ar-prompt">
     </div>
 </model-viewer>
-
   <script>
     function goToHomePage() {
       window.location.href = "index.html";
