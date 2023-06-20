@@ -20,6 +20,17 @@
       border-radius: 20px;
       padding: 10px 20px;
     }
+    #vr-button {
+      position: fixed;
+      bottom: 90px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #a5c7d4;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 20px;
+    }
   </style>
 </head>
 <body>
@@ -30,6 +41,9 @@
   <button slot="ar-button" id="ar-button" >
     👋 Activate AR
 </button>
+    <button id="vr-button">VR Mode
+  👋 Activate VR
+    </button>
 <div id="ar-prompt">
     </div>
 </model-viewer>
